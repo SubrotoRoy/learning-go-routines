@@ -16,6 +16,7 @@ func main() {
 	for i := 0; i < gs; i++ {
 		go func() {
 			v := count
+			runtime.Gosched() //yeilds the processor and allows other go routines to run
 			v++
 			count = v
 			wg.Done()
