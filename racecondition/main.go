@@ -26,4 +26,4 @@ func main() {
 	fmt.Println("count", count)
 }
 
-//use go run -race main.go command to detect race condition
+//use "go run -race main.go" command to detect race condition
